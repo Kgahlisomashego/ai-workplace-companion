@@ -60,7 +60,7 @@ export async function generateEmail(req: EmailRequest): Promise<string> {
   const lines: string[] = [];
   lines.push(`Subject: ${toneSubjects[req.tone](purpose)}`);
   lines.push("");
-  lines.push(context ? `Hi ${context.split(/[,\n]/)[0].trim()},` : "Hi there,");
+  lines.push(context ? `Hi ${(context.split(/[,\n]/)[0] ?? "").trim()},` : "Hi there,");
   lines.push("");
   lines.push(toneOpeners[req.tone]);
   lines.push("");
