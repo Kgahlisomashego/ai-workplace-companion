@@ -1,4 +1,5 @@
 # AI Workplace Companion
+https://prod-aid-bot.lovable.app
 
 Build a modern, responsive SaaS-style web application called “AI Workplace Productivity Assistant”.
 
